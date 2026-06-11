@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.primary.900");
+    border-right-color: theme("colors.primary.200");
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.200");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+/* Date picker */
+.date-picker.rdp-root {
+  --rdp-accent-color: theme("colors.accent.500");
+  --rdp-accent-background-color: theme("colors.accent.700");
+  --rdp-day-height: 32px;
+  --rdp-day-width: 32px;
+  --rdp-day_button-height: 32px;
+  --rdp-day_button-width: 32px;
+  --rdp-day_button-border-radius: 999px;
+  --rdp-dropdown-gap: 0.75rem;
+  --rdp-months-gap: 2.5rem;
+  --rdp-nav_button-height: 2rem;
+  --rdp-nav_button-width: 2rem;
+  --rdp-range_middle-background-color: theme("colors.accent.700");
+  --rdp-range_middle-color: theme("colors.primary.50");
+  --rdp-selected-border: 2px solid theme("colors.accent.500");
+  --rdp-today-color: theme("colors.accent.500");
+  color: theme("colors.primary.200");
+  margin: 0;
+}
+
+.date-picker .rdp-months {
+  align-items: flex-start;
+}
+
+.date-picker .rdp-month_caption {
+  font-weight: 600;
+}
+
+.date-picker .rdp-dropdown {
+  border: 1px solid theme("colors.primary.700");
+  border-radius: 2px;
+  background-color: theme("colors.primary.900");
+  color: theme("colors.primary.100");
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem;
+}
+
+.date-picker .rdp-chevron {
+  fill: theme("colors.accent.500");
+}
+
+.date-picker .rdp-weekday {
+  color: theme("colors.primary.400");
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.date-picker .rdp-day_button {
+  font-size: 0.875rem;
+}
+
+.date-picker .rdp-day:not(.rdp-disabled) .rdp-day_button:hover {
+  background-color: theme("colors.accent.600");
+  color: theme("colors.primary.900");
+}
+
+.date-picker .rdp-disabled {
+  color: theme("colors.primary.600");
+  text-decoration: line-through;
+}

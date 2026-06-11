@@ -1,0 +1,28 @@
+[
+  {
+    "timestamp": "2026-05-11T17:24:32.435672",
+    "role": "user",
+    "content": "hi"
+  },
+  {
+    "timestamp": "2026-05-11T17:24:32.435710",
+    "role": "bot",
+    "content": "That's interesting! Tell me more.",
+    "status": "success",
+    "response": "That's interesting! Tell me more.",
+    "source": "local"
+  },
+  {
+    "timestamp": "2026-05-11T17:24:41.171400",
+    "role": "user",
+    "content": "help"
+  },
+  {
+    "timestamp": "2026-05-11T17:24:41.171451",
+    "role": "bot",
+    "content": "I'm here to help! Ask me anything.",
+    "status": "success",
+    "response": "I'm here to help! Ask me anything.",
+    "source": "local"
+  }
+]

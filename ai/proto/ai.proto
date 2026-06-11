@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service AIService {
+    rpc Summarize (SummaryRequest) returns (SummaryResponse);
+}
+
+message SummaryRequest {
+    string text = 1;
+}
+
+message SummaryResponse {
+    string result = 1;
+}
