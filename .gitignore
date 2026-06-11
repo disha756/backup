@@ -36,5 +36,7 @@ Thumbs.db
 *.tar.zst
 *.zip
 
+*.ipynb
+
 skill
 todo_task
